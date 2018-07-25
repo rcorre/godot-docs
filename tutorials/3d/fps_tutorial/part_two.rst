@@ -381,7 +381,7 @@ Another advantage is we can have more complex bullet movement. If we want to mak
 controlling script slowly push the bullet towards the ground. Using a object also makes the bullet take time to reach its target, it doesn't instantly
 hit whatever its pointed at. This feels more realistic because nothing in real life moves instantly from one point to another.
 
-One of the huge disadvantages performance. While having each bullet calculate their own paths and handle their own collision allows for a lot of flexibility,
+One of the huge disadvantages is performance. While having each bullet calculate their own paths and handle their own collision allows for a lot of flexibility,
 it comes at the cost of performance. With this method we are calculating every bullet's movement every step, and while this may not be a problem for a few dozen
 bullets, it can become a huge problem when you potentially have several hundred bullets.
 
@@ -405,7 +405,7 @@ to keep in mind when creating your first person shooter, especially if you plan 
 
 _________
 
-The other way of handling bullet collisions we will be looking at, is raycasting.
+The other way of handling bullet collisions we will be looking at is raycasting.
 
 This method is extremely common in guns that have fast moving bullets that rarely change trajectory change over time.
 
@@ -682,7 +682,7 @@ a consistent interface to interact with in ``Player.gd``. By using the same vari
 weapon, we can interact with them without having to know which weapon we are using, which makes our code
 much more modular because we can add weapons without having to change much of the code in ``Player.gd`` and it will just work.
 
-If we could write all of the code in ``Player.gd``, but then ``Player.gd`` will get increasingly harder to manage as we add weapons.
+We could write all of the code in ``Player.gd``, but then ``Player.gd`` will get increasingly hard to manage as we add weapons.
 By using a modular design with a consistent interface, we can keep ``Player.gd`` nice and neat, while also making it easier to add/remove/modify weapons.
 
 _________
