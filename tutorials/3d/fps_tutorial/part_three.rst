@@ -199,7 +199,7 @@ Open up ``Weapon_Pistol.gd`` and add the following class variables:
     const RELOADING_ANIM_NAME = "Pistol_reload"
 
 * ``CAN_RELOAD``: A boolean to track whether this weapon has the ability to reload
-* ``CAN_REFIL``: A boolean to track whether we can refill this weapon's spare ammo. We will not be using ``CAN_REFIL`` in this part, but we will in the next part!
+* ``CAN_REFILL``: A boolean to track whether we can refill this weapon's spare ammo. We will not be using ``CAN_REFILL`` in this part, but we will in the next part!
 * ``RELOADING_ANIM_NAME``: The name of the reloading animation for this weapon.
 
 Now we need to add a function for handling reloading. Add the following function to ``Weapon_Pistol.gd``:
