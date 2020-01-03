@@ -1224,6 +1224,9 @@ Either of the *setter* or *getter* functions can be omitted::
     # Only a getter (note the comma).
     var my_var = 5 setget ,my_var_get
 
+If the setter or getter is omitted, Godot will provide a default implementation
+that sets or gets the underlying value directly.
+
 Setters and getters are useful when :ref:`exporting variables <doc_gdscript_exports>`
 to the editor in tool scripts or plugins, for validating input.
 
